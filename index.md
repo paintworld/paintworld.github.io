@@ -81,43 +81,106 @@ bundle exec jekyll serve
 
 If you want to shorten this long command, you can put this code in a file such as jekyll.sh (on a Mac) and then simply type `. jekyll.sh` to build Jekyll.
 
-## Running the site in Docker
+## 페인트 제조사
 
-You can also use Docker to directly build and run the site on your local machine. Just clone the repo and run the following from your working dir:
-```
-docker-compose build --no-cache && docker-compose up
-```
-The site should now be running at [http://localhost:4000/](http://localhost:4000/).
-
-This is perhaps the easiest way to see how your site would actually look.
-
-## Configure the sidebar
-
-There are several products in this theme. Each product uses a different sidebar. This is the essence of what makes this theme unique -- different sidebars for different product documentation. The idea is that when users are reading documentation for a specific product, the sidebar navigation should be specific to that product. (You can read more of my thoughts on why multiple sidebars are important in this [blog post](http://idratherbewriting.com/2016/03/23/release-of-documentation-theme-for-jekyll-50/).)
-
-The top navigation usually remains the same, because it allows users to navigate across products. But the sidebar navigation adapts to the product.
-
-In each page's frontmatter, you must specify the sidebar you want that page to use. Here's an example of the page frontmatter showing the sidebar property:
+국내 페인트 제조사는   (주)KCC , 조광페인트㈜, 노루표페인트, 삼화페인트, 제비표페인트 등 대형5개사가 				
+있으며, 그외 신동페인트㈜, 등등 많은 중소기업 페인트 제조사들이 있다				
+또한 외국회사로는 ㈜IPK , 조광요턴, 츄코쿠삼화, PPG코리아 등이 있다				
 
 <pre>
 ---
-title: Alerts
-tags: [formatting]
-keywords: notes, tips, cautions, warnings, admonitions
-last_updated: July 3, 2016
-summary: "You can insert notes, tips, warnings, and important alerts in your content. These notes are stored as shortcodes made available through the linksrefs.hmtl include."
-<span class="red">sidebar: mydoc_sidebar</span>
-permalink: mydoc_alerts
+
+< 페인트 제조사 공식 사이트>
+
+조광페인트	http://www.ckpc.co.kr					
+KCC페인트	www.kccworld.co.kr/ 					
+삼화페인트	www.samhwa.com/ 					
+노루표페인트	www.noroopaint.com/ 					
+강남제비스코	www.jevisco.com/ 					
+IPK	https://100.daum.net/encyclopedia/view/47XCOMD000266	
+
 ---
 </pre>
 
-The `sidebar: mydoc_sidebar` refers to the \_data/sidebars/mydoc_sidebar.yml file.
 
-Note that your sidebar can only have 2 levels (expand the **Tag archives** option to see an example of the second level). Given that each product has its own sidebar, this depth should be sufficient (it's really like 3 levels). Deeper nesting goes against usability recommendations.
+## 도료의 종류 및 기능 소개
 
-You can optionally turn off the sidebar on any page (e.g. landing pages). To turn off the sidebar for a page, you should set the page frontmatter tag as `hide_sidebar: true`.
 
-If you don't declare a sidebar, the `home_sidebar` file gets used as the default because this is the default specified in the config file:
+### 1. 우레탄도료 [ Urethane paint ]
+
+요약 폴리우레탄을 주성분으로 한 도료로 폴리우레탄도료라고도 한다. 밀착성·내약품성·내용제성(耐溶劑性)·내마모성(耐磨耗性)·내후성(耐候性)이 뛰어나 공장설비나 기계장치·전기부품의 도장(塗裝)에 쓰인다.						
+폴리우레탄도료라고도 한다. 내약품성(耐藥品性)·목재용·고무용·전기절연용 도료로서 공장설비나 기계장치·전기부품의 도장(塗裝)에 쓰인다. 밀착성·내약품성·내용제성(耐溶劑性)·내마모성(耐磨耗性)·내후성(耐候性)이 뛰어나다.						
+[네이버 지식백과] 우레탄도료 [urethane paint] (두산백과)						
+
+### 2. 수성도료 [ Water paint ]
+
+도료를 칠하기 쉽게 하는 데 쓰는 매체로 물을 사용하는 도료이다. 보통 안료와 카세인 같은 수용성 호재의 수용액을 혼합한 도료를 일컫는다. 보통 안료와 카세인 · 젤라틴 · 녹말 등의 수용성 호재(水溶性糊材)의 수용액을 혼합한 도료를 말한다. → 에멀션 페인트.
+[네이버 지식백과] 수성 도료 (대한건축학회 건축용어사전)
+
+
+### 3. 분체 도료 [ Powder coating , 粉體塗料 ]
+
+용제를 사용하지 않고 분말 상태에서 도장하고 가열하여 용융시켜 도막을 형성하는 도료. 
+이에는 에폭시 아크릴폴리에스테르 등의 열경화성 타입이 사용된다.						
+도장법에는 유동 침적법, 정전 도장법 등이 있다. 유기 용제를 전혀 사용하지 않기 때문에 휘발성 유기 화합물(VOC)이 적고, 환경 보호에 적합한 도료이다. 또한 유기용제로 인한 중독이나 인화의 위험도 없고 도막은 수십 마이크로미터(μm)에서 수백 마이크로미터(μm) 정도로 용제계와 같은 돌출이나 패임이 적고, 내구성도 훌륭하다. 공정에서 도착되지 않은 도료는 회수하여 재이용이 가능하나, 발색에서는 개선이 필요하다. 색 교체 시 용제계 도료와 같이 간단치가 않고 총비용이 많이 들며, 작업면의 평활성에서 외관상 문제가 있다.						
+분체 도료는 일반적으로 입자의 직경이 작은 것이 미관상 좋은 반면, 평균 입자 크기보다 작은 미세한 분말이 많이 포함되어 있는 경우에는 도장의 효율이 거꾸로 낮아지고, 외관도 좋지 않다.						
+최근에는 미립자 분말 도료가 개발되어 입자의 평균 지름이 25μm로 종래의 분체 도료보다 미세해지고, 표준 편차가 20μm 이하로 입자가 균일해져서 도장 대상품의 패인 부분에도 균일한 부착성을 나타내며, 용제 도료에 버금가는 평활한 작업면을 얻을 수 있다. 이러한 특징 때문에 종래의 분체 도료로는 이루기 어려웠던 박막화가 가능하고, 도료의 사용량도 3할 정도 낮출 수 있으며 비용이 높다는 문제도 해결되어, 휴대 전화나 개인용 컴퓨터 등과 같은 IT관련 기기를 시작으로 가전 전기 제품, 주방용품, 사무용품, 자판기, 건축 제재, 미관재 등에 광범위하게 사용되고 있다.						
+[네이버 지식백과] 분체 도료 [powder coating, 粉體塗料] (색채용어사전, 2007., 박연선, 국립국어원)						
+
+
+### 4. 아크릴수지도료 [ Acryl 樹脂塗料 ]
+
+① 아크릴수지를 주성분으로 하여 용제에 용해제조한 도료.
+② 용액형의 도료로는 자연 건조형(래커제) 및 가열건조형(열경화성)인 것이 생산 공급되고 있으나, 알루미늄 · 경금속 · 아연과 같은 금속에도 잘 부착되기 때문에 주로 금속 표면 도장용으로도 사용.
+③ 도막은 단단하며 색채가 선명하여 보색성이 좋고 광택도 오래 갈 뿐 아니라, 부착성 · 내수성 · 내오염성 · 내약품성 · 내유성 및 내자외선성이 매우 강함. 특히 열경화성 도료는 단단하고 부착성이 좋기 때문에 한번에 원하는 도막을 만들 수 있음.
+④ 래커제의 도료는 차량(차량 · 경차량) · 비행기 · 전기기구 · 가구 및 조리대류 등에 사용하며, 열경화성 도료는 강판 · 알루미늄판 등의 공업용 도장에 이용하고, 가정 전기기구 · 건축재 · 가구 및 집기류 등에도 사용.
+[네이버 지식백과] 아크릴수지도료 [acryl 樹脂塗料] (대한건축학회 건축용어사전)
+
+
+### 5. 곰팡이 방지 도료 [ Fungus resistant paint ]
+
+바탕이나 도막에 곰팡이가 피는 것을 방지하기 위해 구리나 수은 및 유기 살균제 등을 혼입한 도료이다.						
+[네이버 지식백과] 곰팡이 방지 도료 [fungus resistant paint] (공조냉동건축설비 용어사전, 2011. 1. 15., 공조설비용어사전 편찬회)						
+
+### 6. 내알칼리성 도료 [ Alkali proof paint ]
+
+합성수지류로 만든 알칼리에 강한 도료. 욕실이나 새로 바른 콘크리트 위에 칠해도 비누화하지 않는다.						
+[네이버 지식백과] 내알칼리성 도료 [耐alkali性塗料, alkali proof paint] (대한건축학회 건축용어사전)						
+
+### 7. 정전 도료 [ Electrostatic Coating, Electrostatic Spraying ]
+
+일반적으로 피도장물을 양극, 분무장치를 음극으로 하여 직류고전압을 걸어 정전기를 대전시킨 분무상의 도료를 물품에 전기적으로 흘려 도장하는 방법. 도료 손실이 적고, 에너지 절약에는 좋으나, 요철부의 도료 부착이 적고, 전기 불량도체에는 특수한 장치를 필요로 하며, 설비비가 고가이다.
+[네이버 지식백과] 정전 도료 [Electrostatic Coating, Electrostatic Spraying] (도금기술 용어사전, 2000. 6., 성주창)
+
+### 8. 전착 도료 [ Electrophoretic Painting , 電着塗料 ]
+
+(1) 전기 분해에 의해 전극에 도료를 전착시키는 과정.						
+(2) 수용성 수지 도료를 넣은 수조 내에 전극과 도장 재료를 넣고, 직류 전압을 걸어 전기영동에 의해 도장하는 방법.						
+[네이버 지식백과] 전착 도료 [Electrophoretic Painting, 電着塗料] (국방과학기술용어사전, 2021. 05. 31.)						
+
+
+### 9. 발광도료 [ luminous paint ]
+
+단파장의 빛 에너지를 가시광선으로 변화시킬 수 있는 물질을 함유하는 도료. 형광도료·축광(蓄光)도료·야광도료가 있다.			
+형광도료는 도막이 빛을 받아 형광을 내게 하여 밝고 선명한 색을 드러내는 도료이며 옥외간판·안전표지 등에 사용된다.			
+축광도료는 일광·자외선·전등 따위에 노출되면 빛에너지가 도막에 축적되어 광원이 없어도 어두운 곳에서 장시간 빛나는 도료이며 안전표지·낚시도구 등에 사용된다.			
+야광 도료는 빚을 받지 않아도 도막이 어두운 곳에서 빛나는 도료로 축광성 안료에 방사성 동위원소를 첨가한 것을 안료성분으로 한다.			
+동위원소에서 방사되는 β선에 의해 발광이 지속된다.			
+안료와 비히클은 별도 용기로 판매되며, 발광도료 중 가장 비싸다.			
+정밀 계기의 문자판, 라디오·시계의 지침, 중요표지에 사용된다.			
+
+### 10. 시온도료 [ heat sensitive paint , thermo-paint , 示溫塗料 ]
+
+① 일정한 온도가 되면 색이 변화하는 안료를 써서 만든 특수 도료.
+② 도막 중에 안료를 포함시켜 일정한 온도가 되면 변색함. 이에 따라 온도를 측정.
+③ ＝카멜레온도료＝서모페인트(thermo paint)＝측온도료.
+④ 2차대전 전 독일에서 서모컬러라는 상품명으로 시판.
+⑤ 온도에 의한 색의 변화가 1회만 있는 것과 온도의 상승에 따라 여러 번 색이 변하는 것이 있으며, 또 온도가 내려가면 원색이 되는 것과 되지 않는 것이 있음.
+⑥ 전기기구의 과열에 의한 위험 방지 · 위험물의 용기 · 저장고의 온도 지시 · 노(爐)의 내부 · 원동기 운전시의 온도측정 등에 쓰임.
+[네이버 지식백과] 시온도료 [heat sensitive paint, thermo-paint, 示溫塗料] (대한건축학회 건축용어사전)
+
+
+
 
 ```yaml
 -
