@@ -3,7 +3,7 @@ repository: tomjoht/documentation-theme-jekyll
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
-topnav_title: 페인트백과사전
+topnav_title: 페인트전문지식백과사전
 # this appears on the top navigation bar next to the home button
 
 site_title: 페인트백과사전
@@ -33,7 +33,7 @@ exclude:
   - vendor
 # these are the files and directories that jekyll will exclude from the build
 
-feedback_subject_line: 페인트백과사전
+feedback_subject_line: 페인트전문지식백과사전
 
 feedback_email: hjk9717@naver.com
 # used as a contact email for the Feedback link in the top navigation bar

@@ -1,5 +1,5 @@
 ---
-title: Themes
+title: 금속 진열대용
 tags: [publishing]
 keywords: themes, styles, colors, css
 last_updated: July 3, 2016
